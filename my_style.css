@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+}
+
+h1{
+  color: #eaf7a2f1;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game {
+  box-shadow: 0 1px 4px rgba(231, 21, 21, 0.5);
+  padding: 15px;
+  background: rgba(155, 155, 155 , .40);
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 80px 80px 80px 80px;
+  border: 1px solid #27c241;
+}
+
+.grid button {
+  background-color: #f5f1f1;
+  color: #f33b3bd5;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #550000;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration:0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, tranform;
+  transition-property: box-shadow, tranform;
+}
+
+.grid button:hover, .grid button:focus, .grid button:active{
+  box-shadow: 0 0 20px rgba(112, 190, 243, 0.973);
+  background-color: #c5c0c0;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+
+.footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer button {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  width: 80px;
+  background-color: #D4EE9F;
+  color: #003333;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  color: #D4EE9F;
+  background-color: #2e1891;
+}
+
+.footer span {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  color: #D4EE9F;
+  font-weight: bold;
+  margin: auto 0;
+}
+
+.message {
+  color:#AA3939;
+  height: 80px;
+}
